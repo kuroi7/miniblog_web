@@ -8,6 +8,7 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import "bootstrap"
+// tips：↓この相対パスの書き方でいいのか
 import "../../assets/stylesheets/application"
 
 Rails.start()
