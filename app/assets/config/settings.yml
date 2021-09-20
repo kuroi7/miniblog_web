@@ -1,0 +1,2 @@
+api_url: "http://<%= ENV['API_HOST'] %>/graphql"
+api_schema_file: 'db/scema.json'
