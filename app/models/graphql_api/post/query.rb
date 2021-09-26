@@ -1,10 +1,9 @@
 module GraphqlApi
   module Post
-    class query
+    class Query
       POSTS_QUERY = <<-GRAPHQL.freeze
         query($id: ID!) {
-          selfPost {
-            posts {
+            post(id: $id) {
               id
               title
               comments {
@@ -13,7 +12,6 @@ module GraphqlApi
               }
             }
           }
-        }
       GRAPHQL
     end
   end

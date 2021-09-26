@@ -2,5 +2,6 @@
   .card
     .card-body
       %h1.card-title  title
-      %p.card-text  text
+      %p.card-text  
+        = @post
       = link_to "post" ,posts_path
